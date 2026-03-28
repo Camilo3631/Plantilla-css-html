@@ -403,3 +403,144 @@ h3 {
     cursor: pointer;
 }
 
+
+
+@media (max-width: 768px) {
+
+    /* Header */
+    .header-grd {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+        padding: 30px 0;
+        text-align: center;
+    }
+
+    .red {
+        grid-column: auto;
+        grid-row: auto;
+        justify-self: center;
+    }
+
+    .red ul {
+        grid-template-columns: repeat(5, 1fr); 
+    }
+
+
+    .container-person {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .container-servicios {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .container-medidas {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        height: auto; 
+    }
+
+
+    .container-footer {
+        grid-template-columns: 1fr; 
+        gap: 10x;
+        justify-content: center;
+        width: 100%;
+    }
+
+
+
+  .copyright-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;                 
+      width: 90%;             
+      margin: 0 auto;            
+      padding: 0 10px;
+      box-sizing: border-box;
+      text-align: center;         
+  }
+
+  .col-left, 
+  .col-right {
+      justify-self: center;      
+
+}
+
+    .container-master {
+    width: 100%;
+    background-color: #e2e2e2; 
+}
+
+}
+
+
+
+@media (max-width: 600px) {
+
+
+  .header-grd {
+    grid-template-columns: 1fr; 
+    text-align: center;
+    gap: 15px;
+    padding: 20px 10px;
+  }
+
+  .red ul {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    justify-items: center;
+  }
+
+  
+  .container-person,
+  .container-servicios,
+  .container-medidas {
+    grid-template-columns: 1fr; /* una columna */
+    gap: 15px;
+    justify-items: center;
+  }
+
+  /* Footer */
+  .container-footer {
+    display: grid;               
+    grid-template-columns: 1fr;  
+    gap: 20px;
+    width: 100%;             
+    text-align: center;        
+    box-sizing: border-box;      
+    padding: 0 10px;
+  }
+
+
+  .container-footer > div {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+ 
+  .copyright-container {
+      display: grid;
+      grid-template-columns: 1fr; 
+      gap: 10px;                
+      width: 90%;           
+      margin: 0 auto;           
+      padding: 0 10px;
+      box-sizing: border-box;
+      text-align: center;     
+  }
+
+  .col-left, 
+  .col-right {
+      justify-self: center;      
+  }
+
+ .movil-and-email {
+  display: inline-block; 
+  text-align: center;   
+
+}
+}
